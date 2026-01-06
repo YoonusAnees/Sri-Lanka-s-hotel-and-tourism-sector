@@ -1,4 +1,5 @@
 # CIS6008 – Analytics & Business Intelligence
+<<<<<<< HEAD
 ## Task (a): Statistical Analysis of Hotel Revenue (DOWNLOADABLE README)
 
 This README explains **only Task (a)** of the CIS6008 WRIT1 assessment.  
@@ -6,6 +7,11 @@ It shows how to run the statistical analysis in **R / RStudio** and how to prepa
 
 ---
 
+=======
+Statistical Analysis of Hotel Revenue 
+
+---
+>>>>>>> ef9d8291ea548432e4d53daa8cb7f99cf021dd12
 ## 1. Purpose of Task (a)
 
 Task (a) aims to identify **factors influencing hotel revenue** using statistical and business analytics techniques.  
@@ -103,6 +109,7 @@ df %>%
 ```
 
 This table is **illustrative only** and supports statistical findings.
+<<<<<<< HEAD
 
 ---
 
@@ -148,3 +155,5 @@ In the main report, include this sentence:
 ---
 
 End of README – Task (a)
+=======
+>>>>>>> ef9d8291ea548432e4d53daa8cb7f99cf021dd12
