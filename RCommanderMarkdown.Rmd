@@ -1,0 +1,66 @@
+<!-- R Commander Markdown Template -->
+
+Replace with Main Title
+=======================
+
+### Mr_.Vii
+
+### `r as.character(Sys.Date())`
+
+```{r echo=FALSE}
+# include this code chunk as-is to set options
+knitr::opts_chunk$set(comment=NA, prompt=TRUE, out.width=750, fig.height=8, fig.width=8)
+library(Rcmdr)
+library(car)
+library(RcmdrMisc)
+```
+
+
+### Normality Test: ~Revenue
+```{r}
+normalityTest(~Revenue, test="ad.test", data=hotels)
+```
+
+
+### Normality Test: ~Revenue
+```{r}
+normalityTest(~Revenue, test="shapiro.test", data=hotels)
+```
+
+
+### Normality Test: ~Revenue
+```{r}
+normalityTest(~Revenue, test="shapiro.test", data=hotels)
+```
+
+
+### Normality Test: ~Revenue
+```{r}
+normalityTest(~Revenue, test="lillie.test", data=hotels)
+```
+
+
+### Normality Test: ~Revenue
+```{r}
+normalityTest(~Revenue, test="lillie.test", data=hotels)
+```
+
+
+### Boxplot: ~ Revenue
+```{r}
+Boxplot( ~ Revenue, data=hotels, id=list(method="y"))
+```
+
+
+### Dot Plot: Revenue
+```{r}
+with(hotels, Dotplot(Revenue, bin=FALSE))
+```
+
+
+### Quantile-Comparison Plot: Revenue
+```{r}
+with(hotels, qqPlot(Revenue, dist="norm", id=list(method="y", n=2, 
+  labels=rownames(hotels))))
+```
+
