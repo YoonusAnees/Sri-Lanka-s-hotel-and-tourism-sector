@@ -168,6 +168,22 @@ abline(h = 0, col = "green")
 
 
 
+#Revenue with HotelQualityRank
+
+
+
+#Convert To Number 
+
+hotels$HotelQualityRank_num <- dplyr::case_when(
+  hotels$HotelQualityRank == "Low"    ~ 1,
+  hotels$HotelQualityRank == "Medium" ~ 2,
+  hotels$HotelQualityRank == "High"   ~ 3
+)
+
+# Check
+table(hotels$HotelQualityRank, hotels$HotelQualityRank_num)
+
+
 
 
 
